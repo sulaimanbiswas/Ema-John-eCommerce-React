@@ -1,0 +1,29 @@
+.header {
+  background-color: #1c2b35;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.header .nav-links {
+  display: flex;
+  gap: 32px;
+}
+.header .nav-links a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.header .nav-links a:hover {
+  color: #ff9900;
+}
