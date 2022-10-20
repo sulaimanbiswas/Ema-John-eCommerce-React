@@ -16,8 +16,8 @@ const Product = (props) => {
         <p>Manufacturer : {seller} </p>
         <p>Rating : {ratings} start</p>
       </div>
-      <button className="add-to-cart">
-        <p onClick={() => addToCart(product)}>Add to Cart</p>
+      <button onClick={() => addToCart(product)} className="add-to-cart">
+        <p>Add to Cart</p>
         <FontAwesomeIcon
           icon={faShoppingCart}
           className="cart-icon"

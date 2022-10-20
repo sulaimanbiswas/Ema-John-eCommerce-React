@@ -2,8 +2,7 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = (props) => {
-  const { cart, ClearCart } = props;
-  
+  const { cart, ClearCart, children } = props;
   let quantity = 0;
   let total = 0;
   let shipping = 0;
@@ -29,7 +28,7 @@ const Cart = (props) => {
           <p>Clear Cart</p>
         </button>
         <button className="cart-single-btn cart-review">
-          <p>Review Order</p>
+          <p>{children}</p>
         </button>
       </div>
     </div>

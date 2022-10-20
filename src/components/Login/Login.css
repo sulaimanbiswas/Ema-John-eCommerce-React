@@ -1,0 +1,132 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin: 30px 0;
+}
+
+.form-box {
+  width: 30%;
+  background: #ffffff;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 24px;
+  box-shadow: #ffe0b3 -6px 5px;
+}
+.form-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 0.0025em;
+  color: #2a414f;
+  text-align: center;
+  margin: 30px 0 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.form-control label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.0015em;
+  color: #2a414f;
+}
+
+.form-control input {
+  border: 1px solid #95a0a7;
+  border-radius: 5px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.0015em;
+  color: #2a414f;
+}
+.form-error {
+  color: red;
+}
+.form-success {
+  color: green;
+}
+
+.form-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+  color: #0e161a;
+  padding: 10px 0;
+  background: rgba(255, 153, 0, 0.3);
+  border-radius: 5px;
+  border: 0;
+}
+.form-btn:hover {
+  background: rgba(255, 153, 0, 0.5);
+}
+.form-new {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
+  color: #2a414f;
+  text-align: center;
+  margin-top: 10px;
+}
+.form-new-link {
+  color: #ff9900;
+  text-decoration: none;
+}
+.form-hr {
+  border: 0;
+  border-top: 1px solid #95a0a7;
+  margin: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.form-hr::before {
+  top: 50%;
+  left: 50%;
+  content: "or";
+  margin-top: -12px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+.login-with-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-with-provider {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #95a0a7;
+  border-radius: 5px;
+}
+.login-with-provider p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #2a414f;
+}

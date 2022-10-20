@@ -1,0 +1,73 @@
+.order-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 150px 0;
+  align-items: center;
+}
+.reviewProduct {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+  display: flex;
+  gap: 17px;
+}
+
+.reviewProduct img {
+  width: 15%;
+}
+
+.review-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.reviewProduct .review-details {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.reviewProduct .review-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+  color: #1c2b35;
+}
+.reviewProduct .review-price {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
+  color: #1c2b35;
+}
+.reviewProduct .review-price span {
+  color: #ff9900;
+}
+.delete-btn {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(235, 87, 87, 0.3);
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.delete-btn:hover {
+  background-color: rgba(235, 87, 87, 0.5);
+  cursor: pointer;
+}
+.delete-icon {
+  font-size: 31px;
+  color: #eb5757;
+  padding: 3px;
+}

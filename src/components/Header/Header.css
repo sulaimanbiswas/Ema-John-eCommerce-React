@@ -27,3 +27,6 @@
 .header .nav-links a:hover {
   color: #ff9900;
 }
+.active {
+  color: #ff9900 !important;
+}
