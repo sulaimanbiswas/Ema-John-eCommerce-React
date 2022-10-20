@@ -35,7 +35,8 @@
   border: none;
 }
 
-.cart .cart-btn p {
+.cart .cart-btn p,
+.cart .cart-btn a {
   padding: 14px;
   font-style: normal;
   font-weight: 400;
@@ -43,6 +44,7 @@
   line-height: 20px;
   letter-spacing: 0.005em;
   color: #ffffff;
+  text-decoration: none;
 }
 .cart .cart-btn .cart-clear {
   background: #ff3030;

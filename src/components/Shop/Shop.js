@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, useLoaderData } from "react-router-dom";
 import {
   addToLocalStorage,
   deleteFromLocalStorage,
@@ -9,16 +10,8 @@ import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
-  const [products, setProducts] = useState([]);
+  const products = useLoaderData();
   const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((error) => console.log(error));
-  }, []);
-
   useEffect(() => {
     const storedCart = getStoredCart();
     const savedCart = [];
@@ -48,8 +41,7 @@ const Shop = () => {
   };
 
   const ClearCart = () => {
-    const clearAllCart = [];
-    setCart(clearAllCart);
+    setCart([]);
     deleteFromLocalStorage();
   };
 
@@ -65,7 +57,9 @@ const Shop = () => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart cart={cart} ClearCart={ClearCart}></Cart>
+        <Cart cart={cart} ClearCart={ClearCart}>
+          <Link to={"/order-review"}>Review Order</Link>
+        </Cart>
       </div>
     </div>
   );
